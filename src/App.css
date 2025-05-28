@@ -1,0 +1,121 @@
+/* Reset e altura da página */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(50deg,rgba(40, 40, 40, 1) 46%, rgba(128, 128, 125, 1) 96%);
+}
+
+/* Container principal */
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #EAEAEA;
+  /* flex-wrap removido */
+}
+
+/* Estilização do mapa */
+.map-container {
+  background: linear-gradient(135deg, #2C2C3A, #1E1E2F);
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  width: 50%;
+  min-height: 90vh;
+  display: grid;
+  gap: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  overflow-y: auto;
+}
+
+/* Input */
+.map-container > input[type="text"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #2C2C3A;
+  color: #EAEAEA;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Botão */
+.btn-primary {
+  background-color: #FF6B35;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 220px;
+  height: 40px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  display: block;
+}
+
+.btn-primary:hover {
+  background-color: #e85b28;
+  transform: translateY(-2px);
+}
+
+/* Container de detalhes */
+.details-container {
+  background-color: #F9F9FB;
+  color: #333;
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  width: 50%;
+  min-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.details-container h2 {
+  color: #1E1E2F;
+}
+
+.details-container h3 {
+  color: #FF6B35;
+}
+
+.details-container img {
+  border: 2px solid #EAEAEA;
+  border-radius: 8px;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+/* Responsivo para tablets e mobile */
+@media (max-width: 1024px) {
+  .App {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 24px;
+  }
+
+  .map-container,
+  .details-container {
+    width: 95%;
+    min-height: auto;
+    height: auto;
+  }
+
+  .map-container > input[type="text"] {
+    width: 95%;
+  }
+}
