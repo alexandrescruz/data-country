@@ -32,4 +32,5 @@ npm run dev
 ```
 
 ## Autor
-- Alexandre dos Santos Cruz - @alexandrescruz
+- Alexandre dos Santos Cruz
+- LinkedIn: www.linkedin.com/in/alexandrecruz1
