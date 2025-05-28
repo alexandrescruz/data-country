@@ -3,7 +3,7 @@
 
 ## Demonstração
 
-![Screenshot](public\example.png)
+![Screenshot](https://github.com/alexandrescruz/data-country/blob/main/public/example.png)
 
 ## Funcionalidades
 - Pesquisa por país
